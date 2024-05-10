@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons';
 import logo from "../MF_Logo_Banner.png";
 import { Button } from './Button';
+import './Navbar.css'
 
 function Navbar() {
 
@@ -35,7 +36,7 @@ function Navbar() {
                         <img src={logo} alt='MFLOGO'></img>
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
-                        <FontAwesomeIcon icon={click ? faTimes: faBars} />
+                        <FontAwesomeIcon className='fa-bars' icon={click ? faTimes: faBars} />
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className="nav-item">
